@@ -1,7 +1,10 @@
 import AlunoItem from "@/components/AlunoItem";
+import { getAlunos } from "./actions"
+import Navbar from "@/components/Navigation";
+
 
 export default async function AlunosPage() {
-    const alunos = await fetch("http://localhost:8080/alunos").then((res) => res.json());
+    const alunos = await getAlunos();
 
     console.log(alunos);
     
@@ -13,6 +16,7 @@ export default async function AlunosPage() {
         bg-zinc-50
         font-sans
         dark:bg-black">
+            <Navbar/>
             <h1 className="
             flex flex-col flex-1
             items-center
@@ -20,7 +24,9 @@ export default async function AlunosPage() {
             bg-zinc-50 
             font-sans 
             dark:bg-black 
-            text-4xl">Lista de alunos</h1>
+            text-4xl
+            underline decoration-blue-500/70"
+            >Lista de alunos</h1>
 
             <div className="
             flex flex-1 flex-col
