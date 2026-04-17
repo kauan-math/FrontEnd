@@ -21,15 +21,13 @@ export default function Home() {
           <h1 className="
           text-4xl 
           font-mono 
-          underline 
-          decoration-blue-500/70 
           gap-2 
           w-full
           flex 
           justify-center
           
           ">
-            Gerenciamento de Alunos
+            Gerenciamento de <span className="text-blue-500">Alunos</span>
           </h1>
           <p className="
           max-w-md 
