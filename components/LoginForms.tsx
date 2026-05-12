@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import Navbar from "./Navigation";
+
 
 interface Props {
     onSend: (email: string, password: string) => Promise<void | string>;
@@ -32,7 +32,7 @@ return(
     justify-center 
     items-center 
     gap-2">
-        <Navbar />
+      
 
                 <input className="
                 border-2 

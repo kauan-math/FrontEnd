@@ -1,5 +1,5 @@
 import Link from "next/link";
-import NavBar from "./Navigation";
+
 
 interface Props {
     id: number;
@@ -18,7 +18,7 @@ export default function AlunoItem({ id, nome }: Props) {
             gap-5 
             px-5 
             transition-colors  
-            md:w-[158px] 
+            md:w-39.5 
             rounded-lg 
             border-2 
             p-5 
