@@ -1,7 +1,6 @@
 "use client";
 
 import Footer from "@/components/landing/Footer";
-import Navbar from "@/components/layout/Navibar";
 import Button from "@/components/ui/Button";
 import Container from "@/components/ui/Container";
 import {
@@ -278,17 +277,8 @@ function SolicitarPlanoContent() {
 
   return (
     <div className="min-h-screen bg-black text-white selection:bg-yellow-400 selection:text-black">
-      <Navbar />
-
       <main className="pt-28 pb-20">
         <Container>
-          <Link
-            href="/"
-            className="mb-10 inline-flex items-center gap-2 rounded-lg border border-gray-800 bg-zinc-950 px-4 py-2 text-sm text-gray-300 transition hover:border-gray-600 hover:bg-zinc-900 hover:text-white"
-          >
-            ← Voltar
-          </Link>
-
           {/* Header e Barra de Progresso */}
           <div className="mx-auto max-w-4xl text-center">
             <span className="inline-flex items-center gap-2 rounded-full border border-yellow-400/30 bg-yellow-400/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-yellow-400">

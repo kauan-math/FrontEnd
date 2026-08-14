@@ -194,13 +194,6 @@ export default function LoginPage() {
                 >
                   Senha
                 </label>
-
-                <Link
-                  href="/esqueci-senha"
-                  className="text-xs font-medium text-yellow-400 hover:text-yellow-300"
-                >
-                  Esqueceu a senha?
-                </Link>
               </div>
 
               <div className="relative">
@@ -259,16 +252,6 @@ export default function LoginPage() {
               {loading ? "Entrando..." : "Entrar"}
             </button>
           </form>
-
-          <p className="text-center text-sm text-zinc-500">
-            Ainda não tem uma conta?{" "}
-            <Link
-              href="/register"
-              className="font-medium text-yellow-400 transition-colors hover:text-yellow-300"
-            >
-              Cadastre-se
-            </Link>
-          </p>
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import { Check } from "lucide-react";
+import Link from "next/link";
 
 import Button from "@/components/ui/Button";
 import Container from "@/components/ui/Container";
@@ -123,7 +124,9 @@ export default function Plans() {
               </ul>
 
               <div className="mt-10">
-                <Button className="w-full">Solicitar Plano</Button>
+                <Link href={`/solicitar-plano?plan=${plan.name}`}>
+                  <Button className="w-full">Assinar Plano</Button>
+                </Link>
               </div>
             </div>
           ))}

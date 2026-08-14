@@ -81,10 +81,16 @@ export default function Navibar() {
             })}
           </div>
 
-          {/* Botão Desktop */}
-          <div className="hidden md:block">
-            <Link href="/login">
-              <Button>Começar Agora</Button>
+          {/* Botões Desktop */}
+          <div className="hidden items-center gap-3 md:flex">
+            <Link href="/solicitar-plano">
+              <Button>Solicitar Plano</Button>
+            </Link>
+            <Link
+              href="/login"
+              className="px-3 py-2 text-sm font-semibold text-zinc-300 hover:text-white transition-colors"
+            >
+              Entrar
             </Link>
           </div>
 
@@ -149,9 +155,16 @@ export default function Navibar() {
               );
             })}
 
-            <Button className="mt-2 w-full" onClick={() => setMenuOpen(false)}>
-              Começar Agora
-            </Button>
+            <Link href="/solicitar-plano" onClick={() => setMenuOpen(false)}>
+              <Button className="mt-2 w-full">Solicitar Plano</Button>
+            </Link>
+            <Link
+              href="/login"
+              onClick={() => setMenuOpen(false)}
+              className="text-center text-sm font-medium text-zinc-400 py-1 hover:text-white"
+            >
+              Já possui conta? Entrar
+            </Link>
           </div>
         </Container>
       </div>

@@ -1,4 +1,12 @@
-import { Aluno } from "@/components/types/aluno";
+export interface Aluno {
+  id: number;
+  nome: string;
+  email: string;
+  telefone: string;
+  plano: string;
+  status: string;
+  vencimento: string;
+}
 
 export const alunos: Aluno[] = [
   {
