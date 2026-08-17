@@ -12,7 +12,6 @@ const footerLinks = {
   ],
 
   Recursos: [
-    { label: "Demonstração", href: "/demonstracao" },
     { label: "Suporte", href: "/suporte" },
   ],
 };
