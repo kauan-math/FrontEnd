@@ -11,9 +11,7 @@ const footerLinks = {
     { label: "Termos de Uso", href: "/termos" },
   ],
 
-  Recursos: [
-    { label: "Suporte", href: "/suporte" },
-  ],
+  Recursos: [{ label: "Suporte", href: "/suporte" }],
 };
 
 const socials = [
@@ -49,8 +47,8 @@ export default function Footer() {
 
             <p className="mt-6 max-w-md leading-7 text-zinc-400">
               Plataforma completa para academias. Gerencie alunos, treinos,
-              pagamentos e acompanhe toda a evolução da sua academia em um
-              único lugar.
+              pagamentos e acompanhe toda a evolução da sua academia em um único
+              lugar.
             </p>
 
             {/* Informações de contato */}
@@ -68,18 +66,18 @@ export default function Footer() {
                 className="flex items-center gap-3 transition-colors hover:text-yellow-400"
               >
                 <Phone size={18} className="text-yellow-400" />
-              <p className="">
-              <span className="">+55 (41) 999999-9999</span>
-                </p>  
+                <p className="">
+                  <span className="">+55 (41) 999999-9999</span>
+                </p>
               </a>
               <a
                 href="https://whatsapp.com"
                 className="flex items-center gap-3 transition-colors hover:text-yellow-400"
               >
                 <Phone size={18} className="text-yellow-400" />
-              <p className="">
-              <span className="">+55 (41) 99999-9999</span>
-                </p>  
+                <p className="">
+                  <span className="">+55 (41) 99999-9999</span>
+                </p>
               </a>
 
               <div className="flex items-center gap-3">
@@ -92,9 +90,7 @@ export default function Footer() {
           {/* Links */}
           {Object.entries(footerLinks).map(([title, links]) => (
             <div key={title}>
-              <h3 className="mb-5 text-lg font-semibold text-white">
-                {title}
-              </h3>
+              <h3 className="mb-5 text-lg font-semibold text-white">{title}</h3>
 
               <ul className="space-y-3">
                 {links.map((link) => (
